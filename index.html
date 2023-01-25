@@ -169,6 +169,14 @@
 		function closeNav() {
   			document.getElementById("mySidenav").style.width = "0";
 		}
+	    
+	    	function handleMousePos(event) {
+          		var mouseClickWidth = event.clientX;
+          		if(mouseClickWidth>=270){
+                		document.getElementById("mySidenav").style.left='-270px'
+                
+         		}
+		}
     </script>
    
   </div>
