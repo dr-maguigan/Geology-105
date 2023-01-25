@@ -46,6 +46,32 @@
 			padding: 8px 8px 8px 32px;
 			text-align: center;
 		}
+		.intro a {
+			padding: 8px 8px 8px 32px;
+			text-align: center;
+			font-size: 30px;
+		}
+		.box1 {
+			max-width: 65%;
+			height: 25%;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: rgba(0,0,0,.3);
+		}
+		.box2 {
+			max-width: 65%;
+			height: 25%;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: rgba(0,0,0,.3);
+		}
+		.box3 {
+			max-width: 65%;
+			height: 25%;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: rgba(0,0,0,.3);
+		}
 		.navcolor{color:white;}
 		.sidenav {
   			height: 100%;
@@ -160,8 +186,8 @@
     </div>
 		
     <span style="font-size:20px;cursor:pointer;color='white'" class = "navcolor" onclick="openNav()">&#9776; Navigation</span>
-  
-    <script>
+	  
+	  <script>
 		function openNav() {
   			document.getElementById("mySidenav").style.width = "250px";
 		}
@@ -179,20 +205,38 @@
 		}
 	    
 	        document.addEventListener("click", handleMousePos);
-    </script>
+    	</script>
    
-  </div>
-  <h1>Introduction to Class</h1>
+  	</div>
+	<h1>Introduction to Class</h1>
 	<br> <!-- add line break to space out title line and following div -->
+	<h3>What will be covered in this section</h3>
 	<div class = "intro"> <!-- add intro box with text -->
-		<h3>What will be covered in this section</h3>
 		<h4><ul>
-			<li>How does this class work?</li>
-			<li>How will I be assessed?</li>
-			<li>Basic background on science and geology</li>
+			<li><a href="box1">How does this class work?</a></li>
+			<li><a href="box2">How will I be assessed?</a></li>
+			<li><a href="box3">Basic background on science and geology</a></li>
 		</ul></h4>
 	</div>
 	<br> <!-- add line breaks to space out divs -->
-		
+	
+	<div id = "box1" class = "box1">
+		<h3>How does this class work?</h3>
+	</div>
+	
+	<br>
+	
+	<div id = "box2" class = "box2">
+	<h3>How will I be assessed?</h3>
+	
+	</div>
+	
+	<br>
+	
+	<div id = "box3" class = "box3">
+	<h3>Basic background on science and geology</h3>
+	
+	</div>
+	<br>		
 </body>
 </html>
