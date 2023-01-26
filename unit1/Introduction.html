@@ -18,10 +18,14 @@
 			color: white;}
 		h4 {text-align: center;
 			color: white;}
+		h5 {text-align: left;
+			color: white;}
 		p {text-align: left;
 			color: white;}
 		a {text-align:center;
 			color:white;}
+		li {text-align:center;
+			color: white;}
 		body {
   			background-image: url('img/Purple_DEM.png');
   			background-repeat: no-repeat;
@@ -57,27 +61,13 @@
         	.intro a:hover {
   			color: #f1f1f1;
         	}
-		.box1 {
+		.box {
 			max-width: 65%;
 			height: 25%;
 			margin-left:auto;
 			margin-right:auto;
 			background-color: rgba(0,0,0,.3);
          	}
-		.box2 {
-			max-width: 65%;
-			height: 25%;
-			margin-left:auto;
-			margin-right:auto;
-			background-color: rgba(0,0,0,.3);
-		}
-		.box3 {
-			max-width: 65%;
-			height: 25%;
-			margin-left:auto;
-			margin-right:auto;
-			background-color: rgba(0,0,0,.3);
-		}
 		.navcolor{color:white;}
 		.sidenav {
   			height: 100%;
@@ -117,6 +107,29 @@
   			.sidenav {padding-top: 15px;}
   			.sidenav a {font-size: 18px;}
 		}
+		.promptbox {
+			max-width: 65%;
+         		height: 25%;
+			margin-left:auto;
+         		margin-right:auto;
+			text-align: center;
+			font-family: Oswald;}
+		.promptbox h3 {text-align: center;
+			color: white;}
+		.chooserbox {
+  			display: flex;
+			justify-content: center;
+			align-items: center;}
+		.button {
+			display: flex;
+  			justify-content: center;
+			align-items: center;}
+		img {
+  			display: block;
+  			max-width: 35%;
+  			height: auto;
+  			margin-left: auto;
+  			margin-right: auto;}
 	</style> 
 </head>
 <body>
@@ -219,15 +232,15 @@
 	<h3>What will be covered in this section</h3>
 	<div class = "intro"> <!-- add intro box with text -->
 		<h4><ul>
-			<li><a href="#box1">How does this class work?</a></li>
-			<li><a href="#box2">How will I be assessed?</a></li>
-			<li><a href="#box3">Basic background on science and geology</a></li>
+			<li><a href="#section-1">How does this class work?</a></li>
+			<li><a href="#section-3">How will I be assessed?</a></li>
+			<li><a href="#section-5">Basic background on science and geology</a></li>
 		</ul></h4>
 	</div>
 	<br> <!-- add line breaks to space out divs -->
 	
-	<h3>How does this class work?</h3>
-	<div id = "box1" class = "box1">
+	<h3 id="section-1">How does this class work?</h3>
+	<div class = "box">
 		<p>To begin, the syllabus is <a href=https://docs.google.com/document/d/1Ekx3Kdqv1NNzaWxIa9pu2C1jPMAwVdf7/>HERE</a>.
 		Each lesson will begin with the expectations (what will be covered? questions to answer, etc.). Throughout the lesson, there
 		will be stops for recaps and checks for understanding (RCUs). Questions are welcome at any time during the lesson and they are appreciated.
@@ -235,25 +248,39 @@
 		If you have questions on any of these points, please feel free to ask in class or in an email.<p>
 	</div>
 	<br>
-	<h4>Does this all make sense?
+	<h3>Does this all make sense?
 	<br>
-	<a href="#box2">Yes</a> <a href="#box1">No</a></h4>
+	<a href="#section-3">Yes</a> <a href="#section-2">No</a></h3>
 	<br>
 	
-    	<h3>How will I be assessed?</h3>
-	<div id = "box2" class = "box2">
-		<p>Always the main question at the beginning of the course. This might be where things depart from other classes.
+	<h3 id ="section-2">How classtime runs</h3>
+	<div class = "box">
+		<p>Lesson Organization:
+			<ul>
+				<li>Introduce the topic and what will be covered</li>
+				<li>Start into the material with pauses to recap what we've discussed and make sure everyone understands</li>
+				<li>Questions are welcome at any point</li>
+				<li>Finish by reviewing what we just covered</li>
+			</ul>
+	
+    	<h3 id="section-3">How will I be assessed?</h3>
+	<div class = "box">
+		<p>This might be where things depart from other classes.
+		<br>
 		<br>
 		I will be using a competency-based approach, which asks the question "Can you do it or not?" That means you get either 100% or 0%
 		of the points for that assessment.
+		<br>
 		<br>
 		To earn the competency, you will need a passing grade of 70% or higher (when applicable). For these, you will get 2 attempts.
 		<br>
 		Some assessments will have you complete a set of questions with a code to enter on Moodle when you arrive at the correct ending.
 		<br>
+		<br>
 		There will be 24 competency assessments (all on Moodle or on this site) over the semester plus a final exam (6 points) on Moodle. Most are worth 1 point.
 		<br>
 		Deadlines are posted with the assessment on Moodle.
+		<br>
 		<br>
 		There are 30 points possible, including the final. The breakdown is as follows:
 			<ul>
@@ -262,18 +289,79 @@
 				<li>20-23 = C</li>
 				<li>17-19 = D</li
 				<li><17 = F</li>
+			</ul>
 	</div>
 	
-	<h4>Does this all make sense?
+	<h3>Does this all make sense?
 	<br>
-	<a href="#box3">Yes</a> <a href="#box2">No</a></h4>
+	<a href="#section-5">Yes</a> <a href="#section-4">No</a></h3>
 	<br>
+		
+	<h3 id = "section-4">Another way to think about it</h3>
+	<div class = "box">
+		<p>Many classes use percentages and you essentially start with a perfect score and how you do determines how far from perfect you fall.
+		<br>
+		<br>
+		In this grading scheme, you start with 0 and fill up your progress bar until you reach the point at which you are happy. Once you reach a threshold, you cannot fall back down.
+		<br>
+		<br>
+		You can also gamify this a bit and see it as badges you have to earn like in Pokemon. You have to earn 8 badges and beat the Elite 4 to be considered the best (A). You can still get 8 badges but decide that the Elite 4 isn't worth your time (B). And so on.
+		<br>
+		<br>
+		However it is you wish to think of it, you have to start from the bottom and work your way to the level that you want.</p>
+		
 	
-    	<h3>Basic background on science and geology</h3>
-	<div id = "box3" class = "box3">
+    	<h3 id ="section-5">Basic background on science and geology</h3>
+	<div class = "box">
+		<h5>Background on science</h5>
+		<p>Science is one of those fields of study that is viewed very differently from one person to the next. Some see it as a menace, while others see it as almost mystical.
+		<br>
+		<br>
+		The reality is that science is not only carried out by men in white lab coats with wild hair holding chemicals; it's carried out by many people on an everyday basis.
+		<br>
+		People use the scientific method/engineering design process regularly.</p>
+	</div>
 	
+	<div class = "promptbox"> <!-- add prompt -->
+		<h3 class="prompt"></h3> <!-- pass in prompt query selector -->
+	</div>
+	<br> <!-- add line break to space out divs -->
+		<div class = "chooserbox"> <!-- add chooser -->
+			<br> <!-- add line break to space out button from div -->
+ 			<select class="chooser"></select> <!-- pass in chooser query selector -->
+    				<div class = "button"> <!-- add button -->
+      					<button class="act-btn">Select</button> <!-- pass in button -->
+    				</div>
+		</div>
+
+	<script src="js/chooser.js"></script> <!-- read in js file -->	
 	
 	</div>
-	<br>		
+	<br>
+	<div class = "box">
+		<p>It's important to also consider all the discoveries that have been made and we continue to make.
+		<br>
+		<br>
+		If we consider all we know about the universe like a basketball, we started with nothing and slowly grew the ball. At this point, we are just adding more bumps to the surface as we make new discoveries.
+		<br>
+		<br>
+		In terms of a puzzle or picture, the starting point was very fuzzy and unclear. Over time, we've figured out the missing pieces and the picture has become clearer.</p>
+	</div>
+	<br>
+	<img src="https://media.istockphoto.com/id/949950798/photo/close-up-of-leather-basketball-background-textured.jpg?s=612x612&w=0&k=20&c=F0UQN_CTJCX-syP3g52Rv6wm1Xpry1QmCwAJpqCbMKI=" alt="Close up of basketball">
+	<br>
+	<div class = "box"
+		<p>The last idea we will touch on is the idea of paradigms and paradigm shifts, which Kuhn (1962) really discussed. Paradigms are large, organizing constructs that scientists align themselves with based on evidence.
+		<br>
+		<br>
+		As science advances and more evidence is discovered, sometimes paradigms are no longer appropriate or able to be altered to fit the new evidence, so they must be abandoned.
+		<br>
+		Think of it like a game of battleship where the paradigm is one of the ships. Too many hits (new evidence that doesn't align) and the ship sinks. So, scientists align themselves with a new paradigm (paradigm shift).</p>
+	</div>
+	<br>
+	<img src="data:image/jpeg;base64,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" alt="Battleship game">
+
+	
+	
 </body>
 </html>
